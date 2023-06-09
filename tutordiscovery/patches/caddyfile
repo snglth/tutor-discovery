@@ -4,5 +4,7 @@
         max_size 10MB
     }
 
+	{{ patch("discovery-caddy-config") }}
+
     import proxy "discovery:8000"
 }
